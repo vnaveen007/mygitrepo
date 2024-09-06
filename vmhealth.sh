@@ -16,11 +16,11 @@ set -e # to show error in the script
 
 set -o pipefail # to show pipefailure in the scipt
 
-df -h
+df -h # to find the drive sizes on linux
 
-free -g 
+free -g # to check memory usage
 
-nproc
+nproc # to check nummber of processors
 
 ps -ef | grep "python" | awk -F" " '{print $2}'
 
