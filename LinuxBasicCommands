@@ -1,0 +1,15 @@
+pwd     = shows working directory
+touch	= to create a new file
+mkdir	= to create a new directory
+chown	= to change ownership of a file
+chmod	= to change read/write permissions of a file
+echo	= to print/display output on screen
+cat 	= to print/diplay what's inside a file
+grep	= to find a regex in a file
+ls 	= to list files
+
+|	= to pass the output from one command to another
+&&	= to execute multiple commands at once
+>>	= to append a line to a file
+>	= to overwrite the content in a file
+
