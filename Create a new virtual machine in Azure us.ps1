@@ -1,6 +1,5 @@
-Create a new virtual machine in Azure using PowerShell with the specified resource group name ($RGName) and virtual machine name ($VMName).
-To create a new virtual machine in Azure using PowerShell with the specified resource group name ($RGName) and virtual machine name ($VMName), you can use the following script:
-```powershell
+#Create a new virtual machine in Azure using PowerShell with the specified resource group name ($RGName) and virtual machine name ($VMName).
+#To create a new virtual machine in Azure using PowerShell with the specified resource group name ($RGName) and virtual machine name ($VMName), you can use the following script:
 # Define variables  
 $RGName = Read-Host "Enter the Resource Group Name"
 $VMName = Read-Host "Enter the Virtual Machine Name"
