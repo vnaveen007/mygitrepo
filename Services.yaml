@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aks-service
+  type: ClusterIP
+  labels:
+    app: aks-app
+    managed-by: azure-arc
+spec:
+  selector:
+    app: aks-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80          

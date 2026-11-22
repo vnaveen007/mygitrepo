@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: Test-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: aks-app
+  template:
+    metadata:
+      labels:
+        app: aks-app
+    spec:
+      containers:
+      - name: aks-container
+        image: ubuntu:latest
+        ports:
+        - containerPort: 80
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
